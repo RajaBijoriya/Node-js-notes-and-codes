@@ -31,5 +31,19 @@ const fs = require("fs");
 // const hel = fs.appendFileSync("hello.txt","hello kese he aappp");
 // console.log(hel)
 
-fs.appendFile("new.txt","helo ji kese he file",(err) => console.log(err))
-console.log("done");
+// fs.appendFile("new.txt","helo ji kese he file",(err) => console.log(err))
+// console.log("done");
+
+
+// fs.copyFileSync("hello.txt","new.txt");
+// console.log("Done");
+
+// fs.unlinkSync("")
+
+// fs.mkdirSync("my-appp", ({recursive : true}));
+
+const  Path =  require("path");
+
+const dirPath = Path.join(__dirname, "exmpale/ab");
+
+fs.mkdirSync(dirPath , {recursive: true})
